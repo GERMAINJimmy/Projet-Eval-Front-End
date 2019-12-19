@@ -1,0 +1,694 @@
+/*GENERAL*/
+body {
+    font-family: "Ubuntu", monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3 {
+    font-style: italic;
+    color: steelblue;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.bouton p {
+    background-color: steelblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+button {
+    background-color: steelblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+fieldset select{
+    background-color: steelblue;
+    color: white;
+}
+
+/*HEADER*/
+.containerLogoMenu {
+    display: flex;
+}
+
+.traducteurEN {
+    margin-left: 10px;
+}
+
+.sousEnTete {
+    display: inline-flex;
+    background-color: steelblue;
+    width: 100%;
+    color: white;
+}
+
+.sousEnTete a {
+    color: white;
+}
+
+.traducteur {
+    margin-top: 10px;
+    display: inline-flex;
+}
+
+.adresse {
+    margin: auto;
+}
+
+.icons {
+    margin-right: 10px;
+    display: inline-flex;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.panier {
+    margin: 0 30px;
+}
+
+/*MENU*/
+.menu {
+    background-color: steelblue;
+    width: 100%;
+}
+
+nav {
+    margin-top: 90px;
+    width: 100%;
+    color: white;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul::after
+
+/*clear fix*/
+    {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+nav > ul > li > a {
+    padding: 20px 30px;
+}
+
+nav li:hover .subMenu {
+    color: white;
+    background-color: steelblue;
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.menu ul li a {
+    margin: 0 15px;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: steelblue;
+}
+
+.subMenu {
+    display: none;
+}
+
+.subMenu li a {
+    padding: 15px 30px;
+    border-top: 1px solid white;
+    font-size: 13px;
+    color: white;
+    width: 150px;
+}
+
+/*masquer le declenchement responsive*/
+nav input[type=checkbox] {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+nav hr {
+    display: none;
+}
+
+nav input[type=checkbox]:checked ~ ul {
+    display: block;
+}
+
+/*MENU SECONDAIRE*/
+.menuSecondaire nav {
+    margin-top: 0px;
+}
+
+.menuSecondaire nav a {
+    color: steelblue;
+}
+
+.menuSecondaire a:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+.menuSecondaire {
+    grid-area: a;
+    border: solid 2px steelblue;
+    margin: 30px 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.menuSecondaire ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/*MENU AVIS*/
+.menuAvis {
+    border: 1px solid steelblue;
+}
+
+.menuAvis ul {
+    display: flex;
+}
+
+.menuAvis a {
+    color: steelblue;
+    background-color: white;
+}
+
+.menuAvis a:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+.menuAvis .active {
+    color: white;
+    background-color: steelblue;
+}
+
+/*CAROUSSEL*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the right */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: RGBa(0, 0, 0, 0.8)
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+/*CORPS DU SITE*/
+.main {
+    display: grid;
+    grid-template-areas: "a b c";
+    height: auto;
+}
+
+.main::after
+
+/*clear fix*/
+    {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.titre_paragraphe {
+    font-weight: bold;
+}
+
+.partieGauche {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.avis {
+    grid-area: a;
+    border: solid 2px steelblue;
+    margin: 30px 0;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.avis i {
+    color: steelblue;
+}
+
+.acces {
+    grid-area: a;
+    border: solid 2px steelblue;
+    margin: 30px 0;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.partieCentrale {
+    text-align: center;
+    grid-area: b;
+    padding: 20px;
+}
+
+.partieCentrale img {
+    width: 100%;
+}
+
+.partieDroite {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.partieDroite img {
+    width: 100%;
+}
+
+.actualite {
+    grid-area: c;
+    border: solid 2px steelblue;
+    margin: 30px 0;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.presse {
+    grid-area: c;
+    border: solid 2px steelblue;
+    margin: 30px 0;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.evenement {
+    grid-area: c;
+    border: solid 2px steelblue;
+    margin: 30px 0;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.partieCentrale_plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.partieCentrale_plan ul a {
+    color: steelblue;
+}
+
+.plan {
+    margin-bottom: 20px;
+}
+
+.bouton_submitcontact {
+    background-color: steelblue;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0 80%;
+}
+
+/*PANIER*/
+.panier {
+    border-collapse: collapse
+}
+
+.panier th {
+    border: 2px solid steelblue;
+}
+
+.panier td {
+    border: 2px solid steelblue;
+}
+
+/*CARTE*/
+.carte {
+    font-weight: bold;
+}
+
+.carte hr.style-eight {
+    overflow: visible;
+    /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double steelblue;
+    color: steelblue;
+    text-align: center;
+}
+
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+hr.style-seven {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr.style-seven:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+.pageavis{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    text-align: left;
+    height: 200px;
+    overflow: scroll;
+    border: 1px solid steelblue;
+    margin-top: 5px;
+}
+.pageavis img
+{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.pageavis p
+{
+    margin-left: 10px;
+}
+.pageavis i{
+    color: steelblue;
+}
+.accueilavis{
+    border: 1px solid steelblue;
+}
+.avisclient {
+    display: flex;
+    width: auto;
+    text-align: left;
+    height: 200px;
+    overflow: scroll;
+    margin-top: 5px;
+}
+.avisclient img
+{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.avisclient p
+{
+    margin-left: 10px;
+}
+.avisclient i{
+    color: steelblue;
+}
+.pageaccueil{
+    display: flex;
+}
+.accueilchambre
+{
+    width: 100%%;
+    border: 2px solid steelblue; 
+}
+.accueilchambre h3
+{
+    text-align: center;
+}
+.accueilrestaurant
+{
+    width: 100%%;
+    border: 2px solid steelblue; 
+    margin: 0 20px;
+}
+.accueilrestaurant h3
+{
+    text-align: center;
+}
+.accueilspa
+{
+    width: 100%%;
+    border: 2px solid steelblue; 
+}
+.accueilspa h3
+{
+    text-align: center;
+}
+video{
+    width: 80%;
+    height: auto;
+}
+    
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: steelblue;
+    color: white;
+}
+
+.prefooter {
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    background-color: steelblue;
+
+}
+
+.footer {
+    display: flex;
+    margin-top: 20px;
+}
+
+.newsletters {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.footer_central {
+    background-color: white;
+    color: steelblue;
+    margin: auto;
+}
+
+.suivez-nous {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.suivez-nous h5 {
+    margin-bottom: 0;
+}
+
+.suivez-nous ul {
+
+    display: inline-flex;
+    list-style: none;
+    margin-top: 0;
+
+}
+
+.suivez-nous ul a {
+    color: white;
+    margin: 0 10px;
+}
+
+.liste_sous_footer {
+    display: inline-flex;
+    list-style: none;
+}
+
+.liste_sous_footer a {
+    color: white;
+    margin: 0 20px;
+}
+
+/*media menu burger*/
+@media screen and (max-width:780px) {
+    .menu-mobile {
+        display: block;
+        color: steelblue;
+        background: white;
+        text-align: center;
+        padding: 12px 0px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li,
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a,
+    nav ul li:hover a {
+        padding: 10px 0px;
+    }
+
+    nav li:hover .subMenu {
+        display: block;
+        position: static;
+    }
+}

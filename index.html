@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <!--insertion du favicon -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/b201c433c3.js" crossorigin="anonymous"></script>
+    <title>Hôtel PARIMIS</title>
+</head>
+
+<body>
+    <header>
+        <div class="containerLogoMenu">
+            <div class="logo">
+                <img id="logo" src="images/logo.png" alt="logo" />
+            </div>
+            <div class="menu">
+                <nav id="toggle" role="navigation">
+                    <label for="menu-mobile" class="menu-mobile">Menu</label>
+                    <input type="checkbox" id="menu-mobile" role="button" />
+                    <ul>
+                        <li><a href="index.html" title="accueil">Accueil</a></li>
+                        <li class="toggleSubMenu"><a href="chambres.html" title="Chambres">Chambres</a>
+                            <ul class="subMenu">
+                                <li><a href="gammes.html" title="voir toutes les gammes">Voir toutes les gammes</a></li>
+                                <li><a href="classique.html" title="Classique">Classique</a></li>
+                                <li><a href="confort.html" title="Confort">Confort</a></li>
+                                <li><a href="deluxe.html" title="Deluxe">Deluxe</a></li>
+                                <li><a href="suite.html" title="Suite">Suite</a></li>
+                            </ul>
+                        </li>
+                        <li class="toggleSubMenu"><a href="restaurant.html" title="Restaurant">Restaurant</a>
+                            <ul class="subMenu">
+                                <li><a href="decouvrez_restaurant.html" title="Découvrez notre Restaurant">Découvrez notre Restaurant</a></li>
+                                <li><a href="carte_brasserie.html" title="Carte Brasserie">Carte Brasserie</a></li>
+                                <li><a href="carte-degustation.html" title="Carte Dégustation">Carte Dégustation</a></li>
+                                <li><a href="carte_restaurant.html" title="Carte Restaurant">Carte Restaurant</a></li>
+                            </ul>
+                        </li>
+                        <li class="toggleSubMenu"><a href="spa.html" title="SPA">SPA</a>
+                            <ul class="subMenu">
+                                <li><a href="spa_nos_soins.html" title="Le SPA et nos Soins">Le SPA et nos Soins</a></li>
+                                <li><a href="soins_detente.html" title="Soins Détente">Soins Détente</a></li>
+                                <li><a href="soins_decouverte.html" title="Soins Découverte">Soins Découverte</a></li>
+                                <li><a href="soins_relaxant.html" title="Soins Relaxant">Soins Relaxant</a></li>
+                                <li><a href="soins_plaisir.html" title="Soins Plaisir">Soins Plaisir</a></li>
+                                <li><a href="soins_evasion.html" title="Soins Evasion">Soins Evasion</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reservation.html" title="Réservation"><i class="fas fa-concierge-bell"></i> Réservation</a></li>
+                        <li class="toggleSubMenu"><a href="hotel.html" title="Hotel">L'Hôtel</a>
+                            <ul class="subMenu">
+                                <li><a href="qui_nous_sommes.html" title="Qui sommes nous ?">Qui sommes nous ?</a></li>
+                                <li><a href="acces.html" title="Accès">Accès</a></li>
+                                <li><a href="contact.html" title="Contact">Contact</a></li>
+                                <li><a href="recrutement.html" title="Recrutement">Recrutement</a></li>
+                                <li><a href="evenements.html" title="Evenements">Evenements</a></li>
+                                <li><a href="presse.html" title="Presse">Presse</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="sousEnTete">
+            <div class="traducteur">
+                <div class="traducteurFR"><a href="traduction_fr.html"><img src="images/traducteurFR.png" /></a></div>
+                <div class="traducteurEN"><a href="traduction_en.html"><img src="images/traducteurEN.png" /></a></div>
+            </div>
+            <div class="adresse">
+                <p>
+                    1 Avenue Montaigne, 75008 Paris | Tel :01 23 45 67 89</p>
+            </div>
+            <div class="icons">
+                <div class="search"><a href="search.html"><i class="fas fa-search"></i></a></div>
+                <div class="panier"><a href="reservation.html"><i class="fas fa-shopping-bag"></i></a></div>
+                <div class="calendrier"><a href="reservation.html"><i class="fas fa-calendar-alt"></i></a></div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <section class="partieCentrale">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="images/hotel.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/hall.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/restaurant1.jpg" style="width:100%">
+                    <div class="text">Restaurant</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/spa3.jpg" style="width:100%">
+                    <div class="text">Piscine SPA</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/spa2.jpg" style="width:100%">
+                    <div class="text"> SPA</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/suite2.jpg" style="width:100%">
+                    <div class="text">Suite</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            <div class="pageaccueil">
+                <div class="accueilchambre">
+                    <h3>CHAMBRES</h3>
+                    <figure><img src="images/chambredeluxe.jpg">
+                        <figcaption>Découvrez le luxe parisien intemporel au Parimis Hôtel, prestigieux hôtel cinq étoiles niché au coeur de Paris, dans le 8ème arrondissement. Les chambres offrent un cadre luxueux et unique.<br><br>
+
+                            L'élégance classique s’unit avec des aménagements modernes dans des chambres spacieuses, chacune ayant son propre caractère. Dans votre chambre, la vue imprenable sur la Tour Eiffel et la Seine vous fascine. Vous vous réveillerez avec la ville Lumière à vos pieds.
+
+                        </figcaption>
+                    </figure>
+                    <a class="bouton" href="chambres.html" title="lien vers la page chambres de l'Hôtel Parimis">
+                        <p> En savoir plus ...</p>
+                    </a>
+                </div>
+                <div class="accueilrestaurant">
+                    <h3>RESTAURANT</h3>
+                    <figure><img src="images/restaurant1.jpg">
+                        <figcaption>Depuis la salle panoramique du restaurant, venez déguster une cuisine raffinée concoctée au fil des saisons. Le temps d'un déjeuner, d'une pause gourmande l'après-midi ou d’un dîner, l'équipe du Parimis et son chef vous invite à découvrir des saveurs à la fois gourmets et gourmandes.<br><br>
+
+                            Le cadre est résolument contemporain, et vous accueille dans une ambiance lounge et chic, résolument ancré dans le style parisien. Le Parimis est ouvert de 12h à 23h, sans obligation de séjour à l'hôtel.
+
+                        </figcaption>
+                    </figure>
+                    <a class="bouton" href="restaurant.html" title="lien vers la page restaurant de l'Hôtel Parimis">
+                        <p> En savoir plus ...</p>
+                    </a>
+                </div>
+                <div class="accueilspa">
+                    <h3>SPA</h3>
+                    <figure><img src="images/spa4.jpg">
+                        <figcaption>Le Parimis est la nouvelle adresse dédiée au bien-être et à la détente avec l'ouverture d'un Spa à la fois chic et zen : thérapeutes, kinés, masseurs, esthéticiennes confirmés dispensent des soins de qualité dans une atmosphère de plénitude.<br><br>
+
+                            Un refuge pour le corps et l'esprit, le Spa de l'Hôtel Parimis offre toutes les options du bien-être contemporain dans un cadre à la fois somptueux et élégant. Le Spa est ouvert de 8h30h à 20h, sans obligation de séjour à l'hôtel.
+                        </figcaption>
+                    </figure>
+                    <a class="bouton" href="spa.html" title="lien vers la page spa de l'Hôtel Parimis">
+                        <p> En savoir plus ...</p>
+                    </a>
+                </div>
+            </div>
+                
+                <div>
+                    <h3>Présentation de l'hôtel</h3>
+                    <figure><video src="video/presentation.mp4" title="video de l'inauguration du Parimis Hôtel" controls></video>
+                        <figcaption>A l'origine, le Parimis Hotel Paris était la demeure du Prince Roland Bonaparte, de quoi vous donner le sentiment d'être un prince des temps modernes. Construit en 1928 dans un style Art déco, l'Hotel Parimis Paris offre 244 chambres et suites, une impressionnante collection d'art et 1 restaurant étoilé au Guide Michelin 2018, le tout à deux pas des Champs-Élysées. Le service Parimis inégalé vous promet un séjour inoubliable.<br><br>
+
+                            En pénétrant dans l'élégant hall d'entrée du Parimis Hotel Paris, vous vous délectez déjà du traitement royal qui vous est offert. Le check-in en toute confidentialité dont vous bénéficiez vous pousserait presque à penser que vous êtes le seul dans ces lieux.
+                        </figcaption>
+                    </figure>
+                    <a class="bouton" href="spa.html" title="lien vers la page spa de l'Hôtel Parimis">
+                        <p> En savoir plus ...</p>
+                    </a>
+                </div>
+                <div class="accueilavis">
+                    <div  class="avisclient">
+                    <img src="images/avis10femme.jpeg" />
+                    <p><span style="font-weight: bold">Flora.M</span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><br><br>Extraordinaire séjour grâce à la complicité d'Antoine et de son équipe. Repas excellent face à la tour eiffel au restaurant l'oiseau blanc , chambre sublime, préparée magnifiquement , piscine superbe. Tout était parfait et restera inoubliable. Au plaisir de revenir</p><br><br></div>
+                    <a class="bouton" href="avis.html" title="lien vers la page avis de l'Hôtel Parimis">
+                        <p> En savoir plus ...</p>
+                    </a>
+                </div>
+                <div class="acces">
+                    <h2>ACCES</h2>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6400071725643!2d2.29988435069765!3d48.86507470808922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1%20Avenue%20Montaigne%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1575568649620!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <figcaption>Localisé dans le 8e arrondissement de Paris, sur la rive droite de la Seine, l’Hôtel Parimis est situé à proximité de la Place de la Concorde, l’une des places emblématiques de la capitale. La localisation de l’hôtel permet à ses clients de se rendre en quelques minutes seulement dans les plus beaux monuments et sites historiques de Paris. Pour les amateurs d’art et de culture, le Musée du Louvre, le Grand Palais et le Jardin des Tuileries sont à quelques pas. Les Champs-Elysées, la rue du Faubourg Saint Honoré et la rue Royale sauront également combler les amoureux de shopping.
+                        </figcaption>
+                    </figure>
+                    <a class="bouton" href="acces.html" title="lien vers la page acces de l'Hôtel Parimis">
+                        <p> En savoir plus ...</p>
+                    </a>
+
+                </div>
+
+
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="prefooter">
+            <input type="text" placeholder="Inscrivez votre recherche" class="zoneText" /><input type="button" value="Rechercher" class="Valider" /></div>
+        <div class="footer">
+            <div class="newsletters">
+                <p>Abonnez-vous à la newsletter</p><input type="text" placeholder="E-mail" class="zoneText" /><br><input type="button" href="#" value="Valider" class="Rechercher" />
+            </div>
+            <div class="footer_central"><img id="logo" src="images/logo.png" alt="logo" />
+                <p>Parimis Hotel & Spa<br>
+                    1 Avenue Montaigne
+                    <br>75008 Paris - France<br>
+                    01 23 45 67 89</p>
+            </div>
+            <div class="suivez-nous">
+                <h5>Suivez-nous sur : </h5>
+                <ul>
+                    <li>
+                        <a class="reseaux_sociaux" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a class="reseaux_sociaux" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="reseaux_sociaux" href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sous_footer">
+            <ul class="liste_sous_footer">
+                <li><a href="recrutement.html">Recrutement</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="javascript:window.print()">imprimer cette page</a></li>
+                <li><a href="plan.html">Plan du site</a></li>
+                <li><a href="mention.html">mention</a></li>
+                <li><a href="politique.html">Politique de confidentialité</a></li>
+                <li><a href="cgv.html">Conditions Génerales de vente</a></li>
+            </ul>
+        </div>
+
+        <script src="js/script.js"></script>
+    </footer>
+
+
+</body>
+
+</html>
